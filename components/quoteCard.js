@@ -1,8 +1,4 @@
-export function renderQuote(quoteObj) {
-    const quoteCard = document.getElementById('quote-card');
-    quoteCard.innerHTML = `
-      <blockquote>"${quoteObj.q}"</blockquote>
-      <p>– ${quoteObj.a}</p>
-    `;
-  }
-  
+export function renderQuote(quote) {
+  const card = document.getElementById('quote-card');
+  card.innerHTML = `<blockquote>"${quote.q}"</blockquote><p>– ${quote.a}</p>`;
+}

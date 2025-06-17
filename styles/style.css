@@ -1,0 +1,197 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0faff;
+  color: #333;
+  padding: 1rem;
+}
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#quote-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+form {
+  margin-top: 1rem;
+}
+#mood-options span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+
+/* ========== Dashboard Layout ========== */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile tweak */
+@media screen and (max-width: 700px) {
+  .card-row {
+    flex-direction: column;
+  }
+}
+
+/* ===== NAVIGATION BASE ===== */
+#main-nav {
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid #4caf50;
+}
+
+/* ===== HAMBURGER MENU (Hidden on Desktop) ===== */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media screen and (max-width: 600px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #main-nav.nav-collapsed .menu {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #main-nav:not(.nav-collapsed) .menu {
+    display: flex;
+  }
+}
+
+/* ===== NAVIGATION BASE ===== */
+#main-nav {
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid #4caf50;
+}
+
+/* ===== HAMBURGER MENU (Hidden on Desktop) ===== */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media screen and (max-width: 600px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #main-nav.nav-collapsed .menu {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #main-nav:not(.nav-collapsed) .menu {
+    display: flex;
+  }
+}
+
+#tracker-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#mood-options span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#mood-options span.selected {
+  outline: 2px solid #4caf50;
+  border-radius: 5px;
+}

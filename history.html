@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>History – DailyGlow</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Daily Entry History</h1>
+    <p>View and manage your past logs 📋</p>
+  </header>
+
+  <nav id="main-nav" class="nav-collapsed">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="history.html">History</a></li>
+    </ul>
+  </nav>
+  
+
+  <main>
+    <section id="filters">
+      <label for="moodFilter">Filter by Mood:</label>
+      <select id="moodFilter">
+        <option value="all">All</option>
+        <option value="😊">😊</option>
+        <option value="😐">😐</option>
+        <option value="😴">😴</option>
+        <option value="😢">😢</option>
+        <option value="😠">😠</option>
+      </select>
+
+      <label for="dateFilter">Filter by Date:</label>
+      <input type="date" id="dateFilter" />
+    </section>
+
+    <section id="history-container">
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="js/history.mjs"></script>
+</body>
+</html>

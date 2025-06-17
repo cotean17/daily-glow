@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progress – DailyGlow</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Progress Tracker</h1>
+    <p>Visualize your wellness journey 🌿</p>
+</header>
+
+<nav id="main-nav" class="nav-collapsed">
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="progress.html">Progress</a></li>
+    <li><a href="history.html">History</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <section>
+      <canvas id="progressChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <script type="module" src="js/progress.mjs"></script>
+</body>
+</html>
